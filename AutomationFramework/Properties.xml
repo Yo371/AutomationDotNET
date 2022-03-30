@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<properties>
+	<browserOptions>
+		<!--Available browsers: Chrome, FireFox, IE-->
+		<property name="BrowserType" value="Chrome"/>
+		<property name="PageLoadTimeOutMs" value="10000"/>
+		<property name="ImplicitWaitTimeOutMs" value="500"/>
+		<property name="AsyncJsTimeoutMs" value="1500"/>
+		<property name="DownloadFolder" value="C:/"/>
+	</browserOptions>
+</properties>
