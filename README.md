@@ -1,7 +1,7 @@
 # Automation framework in C# using :
 
-Autofac dependency injection
-locators chains
+- Autofac dependency injection
+- locators chains
 parallel execution
 Thread safe approach
 Page objects
