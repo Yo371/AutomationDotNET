@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using OpenQA.Selenium;
 
 namespace AutomationFramework.Utils
 {
@@ -31,6 +27,16 @@ namespace AutomationFramework.Utils
         public static void ABit(int timeout = 1500)
         {
             Thread.Sleep(timeout);
+        }
+
+        public static void WhileElementMoving(IWebElement element)
+        {
+            var currentLocation = element.Location;
+            while (element.Location != currentLocation)
+            {
+                currentLocation = element.Location;
+                Wait.ABit();
+            }
         }
     }
 }

@@ -24,16 +24,16 @@ namespace AutomationFramework.Tests
         {
             _browser.FindElement(By.XPath(".//*[@id='input_81']")).SendKeys("2");
 
-            _browser.FindElement(By.XPath(".//*[@id = 'select_108']")).Click();
+            _browser.FindElement(By.XPath(".//*[@id = 'select_106']")).Click();
 
-            Wait.ABit();
+            Thread.Sleep(2000);
 
             _browser.FindElement(
-                By.XPath($"//*[@id = 'select_container_103']//md-select-menu//md-option//div[contains(text(), 'N2')]")).Click();
+                By.XPath("//*[@id = 'select_option_222']//div[contains(text(), 'N2')]")).Click();
 
             Assert.IsTrue(_browser.FindElement(By.XPath(".//button[@aria-label='Add to Estimate']")).Enabled);
 
-            Wait.ABit(2000);
+            Thread.Sleep(2000);
         }
 
         [OneTimeTearDown]

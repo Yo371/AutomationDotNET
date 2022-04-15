@@ -30,10 +30,12 @@ namespace AutomationFramework.PageObjects.PageParts
             webElement.Click();
             var id = webElement.GetAttribute("aria-owns");
 
-            Wait.ABit();
+            var optionElement = Browser.FindElement(
+                By.XPath($"//*[@id = '{id}']//md-select-menu//md-option//div[contains(text(), '{option}')]"));
 
-            Browser.FindElement(
-                By.XPath($"//*[@id = '{id}']//md-select-menu//md-option//div[contains(text(), '{option}')]")).Click();
+            Wait.WhileElementMoving(optionElement);
+            
+            optionElement.Click();
         }
     }
 }
