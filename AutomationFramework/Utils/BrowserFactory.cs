@@ -2,6 +2,7 @@
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Firefox;
+using WebDriverManager.DriverConfigs.Impl;
 
 namespace AutomationFramework.Utils
 {
@@ -17,6 +18,7 @@ namespace AutomationFramework.Utils
             switch (PropertiesReader.GetProperty("BrowserType", "Properties.xml"))
             {
                 case "Chrome":
+                    new WebDriverManager.DriverManager().SetUpDriver(new ChromeConfig());
                     driver = new ChromeDriver();
                     break;
                 case "FireFox":

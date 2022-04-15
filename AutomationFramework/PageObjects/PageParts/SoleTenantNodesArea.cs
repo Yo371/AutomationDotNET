@@ -15,7 +15,7 @@ namespace AutomationFramework.PageObjects.PageParts
     {
         private IWebElement _webElementContainer;
 
-        public IWebElement NumberOfNodes => _webElementContainer.FindElement(By.XPath(".//*[@id='input_123']"));
+        public IWebElement NumberOfNodes => _webElementContainer.FindElement(By.XPath(".//*[@id='input_127']"));
 
         public IWebElement AddGpuCheckbox =>
             _webElementContainer.FindElement(By.XPath(".//md-checkbox[@ng-model='listingCtrl.soleTenant.addGPUs']"));

@@ -5,7 +5,7 @@ namespace AutomationFramework.Tests
 {
     internal class GoogleCalculatorTest : BaseTest
     {
-
+        //https://cloudpricingcalculator.appspot.com
         [SetUp]
         public void SetUp()
         {

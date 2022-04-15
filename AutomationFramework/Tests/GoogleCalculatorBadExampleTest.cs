@@ -22,9 +22,9 @@ namespace AutomationFramework.Tests
         [Test]
         public void VerifyEnablingButtonOnInstancesArea()
         {
-            _browser.FindElement(By.XPath(".//*[@id='input_77']")).SendKeys("2");
+            _browser.FindElement(By.XPath(".//*[@id='input_81']")).SendKeys("2");
 
-            _browser.FindElement(By.XPath(".//*[@id = 'select_102']")).Click();
+            _browser.FindElement(By.XPath(".//*[@id = 'select_108']")).Click();
 
             Wait.ABit();
 

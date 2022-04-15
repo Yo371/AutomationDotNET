@@ -6,7 +6,7 @@ namespace AutomationFramework.Utils
     internal class PropertiesReader
     {
 
-        public static string AssemblyLocation => Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+        public static string AssemblyLocation => Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + @"/../../../";
 
         public static string GetAssemblyFile(string fileName) => Path.Combine(AssemblyLocation, fileName);
 
